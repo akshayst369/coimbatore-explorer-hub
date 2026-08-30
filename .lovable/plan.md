@@ -25,8 +25,9 @@ Culture & City Facts
   └── "Manchester of South India" textile heritage, language, climate,
       best time to visit, how to reach
 About the Creator
-  └── "Built by Akshay" section with a photo placeholder and a short
-      personal note to build trust
+  └── "Built by Akshay" section with a photo and a short personal note
+      to build trust. NO phone number, email, or any contact details —
+      just the name Akshay and the photo.
 Footer
   └── Quick links, credit line
 ```
