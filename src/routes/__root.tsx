@@ -77,14 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Kovai Trails — Coimbatore Travel Guide" },
+      {
+        name: "description",
+        content:
+          "Kovai Trails is a friendly travel guide to Coimbatore (Kovai): top places to visit, things to do, local experiences, culture and city facts.",
+      },
+      { property: "og:title", content: "Kovai Trails — Coimbatore Travel Guide" },
+      {
+        property: "og:description",
+        content:
+          "Explore the Manchester of South India: temples, waterfalls, hill getaways, food and culture in and around Coimbatore.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Kovai Trails" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -92,6 +99,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
