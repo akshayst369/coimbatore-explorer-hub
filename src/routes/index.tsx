@@ -24,8 +24,7 @@ import valparaiImg from "../assets/valparai.jpg";
 import aliyarImg from "../assets/aliyar.jpg";
 import gdNaiduImg from "../assets/gd-naidu.jpg";
 import textilesImg from "../assets/textiles.jpg";
-import akshayImg from "../assets/akshay.jpg.asset.json";
-const akshayPhoto = akshayImg.url;
+import akshayPhoto from "../assets/akshay.jpeg";
 
 const SITE_NAME = "Kovai Trails";
 
@@ -438,7 +437,7 @@ function Index() {
             alt="Akshay, creator of Kovai Trails"
             width={128}
             height={128}
-            className="mx-auto mt-8 h-32 w-32 rounded-full object-cover ring-4 ring-accent/20"
+            className="mx-auto mt-8 h-32 w-32 rounded-full object-cover object-[center_top] ring-4 ring-accent/20"
           />
           <h3 className="font-display mt-4 text-xl font-semibold">Akshay</h3>
           <p className="mx-auto mt-3 max-w-xl leading-relaxed text-muted-foreground">
