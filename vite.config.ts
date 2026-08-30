@@ -5,13 +5,20 @@ import tailwindcss from "@tailwindcss/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import { nitro } from "nitro/vite";
 
+const getPreset = () => {
+  if (process.env.NITRO_PRESET) return process.env.NITRO_PRESET;
+  if (process.env.VERCEL) return "vercel";
+  if (process.env.NETLIFY) return "netlify";
+  return "node-server";
+};
+
 export default defineConfig({
   plugins: [
     tanstackStart({
       server: { entry: "server" },
     }),
     nitro({
-      preset: process.env.NITRO_PRESET || "netlify",
+      preset: getPreset(),
     }),
     tailwindcss(),
     tsConfigPaths({ projects: ["./tsconfig.json"] }),
