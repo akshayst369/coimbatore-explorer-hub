@@ -24,6 +24,8 @@ import valparaiImg from "../assets/valparai.jpg";
 import aliyarImg from "../assets/aliyar.jpg";
 import gdNaiduImg from "../assets/gd-naidu.jpg";
 import textilesImg from "../assets/textiles.jpg";
+import akshayImg from "../assets/akshay.jpg.asset.json";
+const akshayPhoto = akshayImg.url;
 
 const SITE_NAME = "Kovai Trails";
 
@@ -431,16 +433,13 @@ function Index() {
           <h2 className="font-display text-3xl font-bold sm:text-4xl">
             About the creator
           </h2>
-          {/* To add your photo: save it as src/assets/akshay.jpg, import it, and
-              replace the placeholder div below with:
-              <img src={akshayImg} alt="Akshay, creator of Kovai Trails" className="mx-auto h-32 w-32 rounded-full object-cover ring-4 ring-accent/20" /> */}
-          <div
-            className="mx-auto mt-8 flex h-32 w-32 items-center justify-center rounded-full bg-primary/10 ring-4 ring-accent/20"
-            role="img"
-            aria-label="Photo of Akshay, creator of Kovai Trails (to be added)"
-          >
-            <span className="font-display text-4xl font-bold text-primary">A</span>
-          </div>
+          <img
+            src={akshayPhoto}
+            alt="Akshay, creator of Kovai Trails"
+            width={128}
+            height={128}
+            className="mx-auto mt-8 h-32 w-32 rounded-full object-cover ring-4 ring-accent/20"
+          />
           <h3 className="font-display mt-4 text-xl font-semibold">Akshay</h3>
           <p className="mx-auto mt-3 max-w-xl leading-relaxed text-muted-foreground">
             Hi, I'm Akshay — I built Kovai Trails to share what makes
