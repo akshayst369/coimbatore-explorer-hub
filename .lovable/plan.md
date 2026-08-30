@@ -37,7 +37,7 @@ Footer
 - Responsive design, works on mobile and desktop
 - Photo-real generated images for hero and attraction cards
 - Fast load: no heavy widgets, no backend needed
-- Simple deployment via the Publish button (one click)
+- Simple, free deployment via the Publish button (one click, no cost, no external accounts needed)
 
 ## What I'm intentionally leaving out (to keep it simple and reliable)
 - Live widgets (weather, Google Maps embed, YouTube/Instagram feeds, currency converter, event scraping): these need API keys or break without maintenance. Instead, the site links out to Google Maps and weather for each attraction, which always works.
